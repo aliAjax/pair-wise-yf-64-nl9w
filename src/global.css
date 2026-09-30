@@ -16,4 +16,22 @@ button.secondary { background:#e1eeee; color:#18565a; }
 button.danger { background:#c2413b; }
 input, select, textarea { width:100%; border:1px solid #bdd3d2; border-radius:9px; padding:8px 10px; background:white; }
 .low-latency .decorative { display:none; }
-@media(max-width:900px){ .grid{grid-template-columns:1fr}.queue-row{grid-template-columns:36px 1fr}.queue-row>*:nth-child(n+3){display:none}.hero{align-items:flex-start;flex-direction:column} }
+.hint { color:#59747b; font-size:12.5px; margin:4px 0; }
+.batch-box { background:#f5faf9; border:1px dashed #b7d3d0; border-radius:12px; padding:12px; margin-top:10px; }
+.batch-box h3 { margin:8px 0; font-size:14px; }
+.staged-row { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:8px 10px; border-bottom:1px solid #e6efee; font-size:13.5px; }
+.handoff-row { display:grid; grid-template-columns:1fr 1.2fr auto; gap:8px; align-items:center; margin:6px 0; }
+.pos-input { width:64px !important; padding:6px 8px !important; }
+.caption-box { margin-top:10px; padding:10px; background:#f1f8f7; border-radius:10px; }
+.caption-box p { margin:4px 0 0; }
+.commit-msg { border-radius:10px; padding:10px 12px; font-size:13px; line-height:1.5; }
+.commit-msg.msg-ok { background:#e5f6ef; color:#13694d; border:1px solid #b6e2cf; }
+.commit-msg.msg-warn { background:#fff5e3; color:#8a5a12; border:1px solid #f0d7a3; }
+.commit-msg.msg-error { background:#fdecea; color:#9c2f28; border:1px solid #f3c2bd; }
+.batch-status { border-radius:12px; padding:12px; border:1px solid #d5e5e3; background:#fbfdfd; }
+.batch-status.status-confirming { border-color:#e8c888; background:#fffaf0; }
+.batch-status.status-conflict { border-color:#e3b1ac; background:#fdf3f2; }
+.batch-status.status-invalidated { border-color:#c7c7c7; background:#f4f4f4; opacity:.92; }
+.batch-status.status-applied { border-color:#aed9c8; background:#f2faf6; }
+button:disabled { opacity:.5; cursor:not-allowed; }
+@media(max-width:900px){ .grid{grid-template-columns:1fr}.queue-row{grid-template-columns:36px 1fr}.queue-row>*:nth-child(n+3){display:none}.hero{align-items:flex-start;flex-direction:column}.handoff-row{grid-template-columns:1fr} }
